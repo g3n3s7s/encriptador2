@@ -8,10 +8,9 @@ function botonEncriptar(){
     mensaje2.value = textoEncriptado //pasarle el texto capturado de un imput a otro//
     caja1.value = ""; //inicializar en cero//
     document.getElementById("imagensinfondo").style.display = "none" //ocultar imagen//
-   
 }
+
 function encriptar(encriptacion) {
-   
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]; //pasarle los nuevos valores para encriptar el texto//
     encriptacion = encriptacion.toLowerCase() // tolowercase es para solo escribir en minusculas//
     
@@ -25,15 +24,16 @@ function encriptar(encriptacion) {
     return encriptacion
 }
 
-    function botonDesencriptar(){
-        const textoDesencriptado = desencriptar(caja1.value)
-        mensaje2.value = textoDesencriptado
-        caja1.value = "";
-    }
-    function desencriptar(desencriptacion) {
+function botonDesencriptar(){
+    const textoDesencriptado = desencriptar(caja1.value)
+    mensaje2.value = textoDesencriptado
+    caja1.value = "";
+}
+
+function desencriptar(desencriptacion) {
        
-        let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
-        desencriptacion = desencriptacion.toLowerCase() // tolowercase es para solo escribir en minusculas//
+    let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+    desencriptacion = desencriptacion.toLowerCase() // tolowercase es para solo escribir en minusculas//
         
         for (let i = 0; i < matrizCodigo.length; i++) {
             if (desencriptacion.includes(matrizCodigo[i][1])) {
