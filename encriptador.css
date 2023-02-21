@@ -1,0 +1,247 @@
+/*Inicio codigo encabezado*/
+
+* {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 120%;
+    overflow-y: visible;
+}
+
+
+body {
+
+    background-image: url(imagenes/habitacion.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+
+}
+
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    font-size: 50px;
+    margin: 0;
+    margin-top: 20px;
+    display: inline-block;
+    color: rgb(35, 241, 231);
+    text-shadow: 0 0 5px rgb(231, 54, 151), 0 0 15px rgb(236, 29, 150), 0 0 10px rgb(226, 35, 153), 0 0 30px rgb(207, 60, 146);
+    margin-left: 50px;
+
+
+}
+
+.fliker1 {
+    animation: parpadear 1.5s infinite backwards steps(2);
+}
+
+@keyframes parpadear {
+
+    to {
+        color: rgb(37, 219, 243);
+        text-shadow: none;
+    }
+}
+
+.main {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    justify-content: center;
+    /*revisar*/
+}
+
+/* codigo encriptador-------------------*/
+
+.caja1 {
+
+    border-style: ridge;
+    border-color: rgb(249, 255, 255);
+    color: hotpink;
+    text-shadow: 0 0 5px rgb(34, 197, 218), 0 0 5px rgb(18, 229, 212), 0 0 50px rgb(9, 158, 156), 0 0 50px rgb(12, 128, 134);
+    margin-top: 5px; /*espacio de los margenes*/
+    text-transform: lowercase;/*texto minuscula*/
+    background-color: transparent; /*caja transparente*/
+    height: 10%;
+    border-width: 5px;
+    border-color: #ffffff;
+    float: right;
+    width: 40%;
+    position: absolute;
+    border-radius: 25px;
+    margin-right: 5%;
+    box-shadow: inset 0 0 50px #d42074ec, 0 0 40px #cd0b93, 0 0 40px #c91e7f, 0 0 40px #c025b5;
+    margin-left: 10px;
+    left: 30px;
+
+}
+
+::placeholder {
+    color: aqua;
+    text-shadow: 0 0 5px rgb(238, 0, 83), 0 0 5px rgb(238, 0, 83), 0 0 50px rgb(238, 0, 83), 0 0 50px rgb(238, 0, 83);
+}
+.caja1:focus {
+    outline: none;
+  }
+
+
+
+#mensaje {
+
+    border-style: solid;
+    color: hotpink;
+    text-transform: lowercase;
+    float: left;
+    background-color: transparent;
+    width: 50%;
+    height: 450px;
+    top: 8px;
+    left: 120px;
+    margin-left: 10px;
+    margin-top: 10px;
+ ;
+
+    position: relative;
+}
+
+.caja2 {
+    border-width: 5px;
+    border-color: #ffffff;
+    float: right;
+    width: 20%;
+    height: 500px;
+    left: 70%;
+    top: 80px;
+    position: absolute;
+    border-radius: 25px;
+    background-color: none;
+    margin-right: 5%;
+    box-shadow: inset 0 0 50px #02f6ff, 0 0 40px #02f6ff, 0 0 40px #02f6ff, 0 0 40px #02f6ff;
+    border-style: solid;
+
+}
+
+
+
+.mensaje2 {
+    border-style: none;
+    color: hotpink;
+    text-transform: lowercase;
+    float: left;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    position: absolute;
+    text-shadow: 0 0 5px rgb(34, 197, 218), 0 0 5px rgb(18, 229, 212), 0 0 50px rgb(9, 158, 156), 0 0 50px rgb(12, 128, 134);
+}
+.mensaje2:focus {
+    outline: none;
+  }
+
+
+#imagensinfondo {
+    z-index: 2;
+    width: 350px;
+    position: absolute;
+    opacity: 0.8;
+    top: 20%;
+    filter: drop-shadow(-15px -15px 20px rgb(236, 232, 4));
+
+}
+
+
+.botones {
+    display: flex;
+    margin-top: 18px;
+
+
+}
+
+.botonEncriptar {
+    background-color: transparent;
+    border: 1px solid hotpink;
+    color: aqua;
+    border-radius: 24px;
+    width: 250px;
+    left: 180px;
+    height: 60px;
+    margin-left: 20px;
+    cursor: pointer;
+    top: 58%;
+    position: absolute;
+    box-shadow: inset 0 0 60px rgb(34, 197, 218), 0 0 5px rgb(18, 229, 212), 0 0 50px rgb(9, 158, 156), 0 0 50px rgb(12, 128, 134);
+
+}
+
+.botonDesencriptar {
+    background-color: transparent;
+    border: 1px solid aqua;
+    color: aqua;
+    border-radius: 24px;
+    width: 250px;
+    left: 500px;
+    height: 60px;
+    cursor: pointer;
+    top: 58%;
+    position: absolute;
+    box-shadow: inset 0 0 60px #d42074ec, 0 0 40px #cd0b93, 0 0 40px #c91e7f, 0 0 40px #c025b5;
+
+}
+
+.copiar {
+    background-color: transparent;
+    border: 1px solid hotpink;
+    color: aqua;
+    border-radius: 24px;
+    width: 250px;
+    left: 25px;
+    top: 65%;
+    margin-top: 220px;
+    height: 60px;
+    position: absolute;
+    cursor: pointer;
+    box-shadow: inset 0 0 90px #571290ec, 0 0 80px #900b68, 0 0 40px #651292, 0 0 40px #6c06ab;
+}
+
+.informacion {
+    color: aqua;
+    font-size: 20px;
+    margin-left: 250px;
+    top: 49%;
+    margin-top: 20px;
+    position: absolute;
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+/*Inicio del Codigo para el Pie de Pagina*/
+
+h2 {
+
+    color: #f3eaef;
+    font-size: 35px;
+    letter-spacing: 3px;
+    text-shadow: 0 0 5px rgb(231, 54, 151), 0 0 15px rgb(236, 29, 150), 0 0 10px rgb(226, 35, 153), 0 0 30px rgb(207, 60, 146);
+    position: absolute;
+    /*Ocupa los pixeles que le pasamos por "width"*/
+    top: 65%;
+    left: 5%;
+    display: inline-block;
+}
+
+.fliker2 {
+    animation: parpadear 1.5s infinite backwards steps(2);
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*Inicio del Responsive*/
